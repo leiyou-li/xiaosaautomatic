@@ -53,6 +53,20 @@ jobs:
         echo "解压后的内容:"
         ls -la
         
+        # 修复api.json中的相对路径
+        echo "修复api.json中的相对路径..."
+        if [ -f "TVBoxOSC/tvbox/api.json" ]; then
+          # 获取当前工作目录的绝对路径
+          CURRENT_DIR=$(pwd)
+          echo "当前工作目录: $CURRENT_DIR"
+          
+          # 替换相对路径为绝对路径
+          sed -i "s|\\./|$CURRENT_DIR/|g" "TVBoxOSC/tvbox/api.json"
+          echo "api.json路径修复完成"
+        else
+          echo "未找到api.json文件，跳过路径修复"
+        fi
+        
         # 删除zip文件
         rm -f "data.zip"
         echo "清理完成"
