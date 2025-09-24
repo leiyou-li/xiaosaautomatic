@@ -25,33 +25,59 @@ jobs:
     - name: 下载压缩文件
       run: |
         echo "开始下载压缩文件..."
-        curl -L -o "单线路.zip" "https://gitee.com/PizazzXS/another-d/raw/master/%E5%8D%95%E7%BA%BF%E8%B7%AF.zip"
+        curl -L -o "download.zip" "https://gitee.com/PizazzXS/another-d/raw/master/%E5%8D%95%E7%BA%BF%E8%B7%AF.zip"
         echo "下载完成"
-    
-    - name: 检查文件是否下载成功
-      run: |
-        if [ ! -f "单线路.zip" ]; then
+        
+        # 显示下载后的文件信息
+        echo "下载后的文件列表:"
+        ls -la *.zip || echo "没有找到zip文件"
+        
+        # 检查文件是否存在
+        if [ -f "download.zip" ]; then
+          echo "文件下载成功，大小: $(ls -lh download.zip | awk '{print $5}')"
+        else
           echo "下载失败，文件不存在"
           exit 1
         fi
-        echo "文件下载成功，大小: $(ls -lh 单线路.zip | awk '{print $5}')"
+    
+    - name: 验证下载文件
+      run: |
+        echo "验证下载的文件..."
+        
+        # 显示当前目录内容
+        echo "当前目录文件列表:"
+        ls -la
+        
+        # 检查zip文件是否存在
+        if [ ! -f "download.zip" ]; then
+          echo "错误：找不到download.zip文件"
+          echo "尝试查找所有zip文件:"
+          find . -name "*.zip" -type f
+          exit 1
+        fi
+        
+        # 检查文件大小
+        echo "文件大小: $(ls -lh download.zip | awk '{print $5}')"
+        
+        # 检查文件类型
+        echo "文件类型: $(file download.zip)"
+        
+        # 尝试列出zip文件内容
+        echo "zip文件内容:"
+        unzip -l download.zip || echo "无法列出zip文件内容"
     
     - name: 解压文件
       run: |
         echo "开始解压文件..."
         
-        # 显示当前目录内容
-        echo "解压前的文件结构:"
-        ls -la
-        
         # 检查zip文件是否存在
-        if [ ! -f "单线路.zip" ]; then
-          echo "错误：找不到单线路.zip文件"
+        if [ ! -f "download.zip" ]; then
+          echo "错误：找不到download.zip文件"
           exit 1
         fi
         
         # 解压文件
-        unzip -o "单线路.zip" -d .
+        unzip -o "download.zip" -d .
         echo "解压完成"
         
         # 显示解压后的文件结构
@@ -59,7 +85,7 @@ jobs:
         ls -la
         
         # 清理zip文件
-        rm -f "单线路.zip"
+        rm -f "download.zip"
         echo "压缩文件已清理"
     
     - name: 清理旧文件
