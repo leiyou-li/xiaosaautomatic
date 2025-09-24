@@ -9,6 +9,8 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
     - name: 检出代码
@@ -16,6 +18,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
+        persist-credentials: true
     
     - name: 设置Git配置
       run: |
@@ -71,5 +74,5 @@ jobs:
         echo "提交更改..."
         git add .
         git commit -m "自动更新: $(date '+%Y-%m-%d %H:%M:%S')"
-        git push origin main
+        git push origin HEAD:main
         echo "更改已提交"
