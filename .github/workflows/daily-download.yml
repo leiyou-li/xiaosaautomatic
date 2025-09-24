@@ -39,14 +39,18 @@ jobs:
     - name: 清理旧文件
       run: |
         echo "清理旧文件..."
-        # 删除之前解压的内容（除了.git目录）
-        find . -maxdepth 1 -type f -name "*.zip" -delete || true
+        # 删除之前解压的内容（除了.git目录和当前下载的zip文件）
         find . -maxdepth 1 -type d ! -name ".git" ! -name "." -exec rm -rf {} + || true
         echo "旧文件清理完成"
     
     - name: 解压文件
       run: |
         echo "开始解压文件..."
+        # 检查文件是否存在
+        if [ ! -f "单线路.zip" ]; then
+          echo "错误：找不到单线路.zip文件"
+          exit 1
+        fi
         unzip -o "单线路.zip" -d .
         echo "解压完成"
         
