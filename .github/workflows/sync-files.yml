@@ -69,11 +69,13 @@ jobs:
           # 替换./json/为完整URL
           sed -i "s|\\./json/|$BASE_URL/json/|g" "TVBoxOSC/tvbox/api.json"
           
-          # 替换./js/为raw URL格式
-          sed -i "s|\\./js/|$BASE_URL/js/|g" "TVBoxOSC/tvbox/api.json"
+          # 替换./js/为Gitee URL格式
+          JS_GITEE_URL="https://gitee.com/zxmoyun/test/raw/master/mjs/"
+          sed -i "s|\\./js/|$JS_GITEE_URL|g" "TVBoxOSC/tvbox/api.json"
           
-          # 修复js目录URL格式，确保使用正确的raw URL
-          sed -i "s|https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/main/TVBoxOSC/tvbox/js/|$BASE_URL/js/|g" "TVBoxOSC/tvbox/api.json"
+          # 修复js目录URL格式，使用Gitee URL
+          sed -i "s|https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/refs/heads/$BRANCH/TVBoxOSC/tvbox/js/|$JS_GITEE_URL|g" "TVBoxOSC/tvbox/api.json"
+          sed -i "s|https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/main/TVBoxOSC/tvbox/js/|$JS_GITEE_URL|g" "TVBoxOSC/tvbox/api.json"
           
           # 替换./py/为完整URL
           sed -i "s|\\./py/|$BASE_URL/py/|g" "TVBoxOSC/tvbox/api.json"
