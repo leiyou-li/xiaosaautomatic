@@ -60,7 +60,7 @@ jobs:
           REPO_OWNER="leiyou-li"
           REPO_NAME="xiaosaautomatic"
           BRANCH="main"
-          BASE_URL="https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/$BRANCH/TVBoxOSC/tvbox"
+          BASE_URL="https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/refs/heads/$BRANCH/TVBoxOSC/tvbox"
           
           echo "仓库URL: $BASE_URL"
           
