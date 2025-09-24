@@ -1,0 +1,75 @@
+name: 同步文件
+
+on:
+  schedule:
+    # 每天北京时间上午9点执行 (UTC+8)
+    - cron: '0 1 * * *'
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+    
+    - name: 设置Git配置
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+    
+    - name: 下载并解压文件
+      run: |
+        echo "开始下载文件..."
+        
+        # 下载文件
+        curl -L -o "data.zip" "https://gitee.com/PizazzXS/another-d/raw/master/%E5%8D%95%E7%BA%BF%E8%B7%AF.zip"
+        
+        # 检查下载是否成功
+        if [ ! -f "data.zip" ]; then
+          echo "下载失败"
+          exit 1
+        fi
+        
+        echo "下载成功，文件大小: $(ls -lh data.zip | awk '{print $5}')"
+        
+        # 显示当前目录
+        echo "当前目录内容:"
+        ls -la
+        
+        # 解压文件
+        echo "开始解压..."
+        unzip -o "data.zip" -d .
+        echo "解压完成"
+        
+        # 显示解压后的内容
+        echo "解压后的内容:"
+        ls -la
+        
+        # 删除zip文件
+        rm -f "data.zip"
+        echo "清理完成"
+    
+    - name: 检查更改
+      id: check-changes
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "检测到文件更改"
+          echo "has-changes=true" >> $GITHUB_OUTPUT
+        else
+          echo "没有检测到文件更改"
+          echo "has-changes=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: 提交更改
+      if: steps.check-changes.outputs.has-changes == 'true'
+      run: |
+        echo "提交更改..."
+        git add .
+        git commit -m "自动更新: $(date '+%Y-%m-%d %H:%M:%S')"
+        git push origin main
+        echo "更改已提交"
