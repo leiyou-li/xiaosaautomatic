@@ -69,13 +69,11 @@ jobs:
           # 替换./json/为完整URL
           sed -i "s|\\./json/|$BASE_URL/json/|g" "TVBoxOSC/tvbox/api.json"
           
-          # 替换./js/为GitHub blob URL
-          JS_BLOB_URL="https://github.com/$REPO_OWNER/$REPO_NAME/blob/$BRANCH/TVBoxOSC/tvbox/js/"
-          sed -i "s|\\./js/|$JS_BLOB_URL|g" "TVBoxOSC/tvbox/api.json"
+          # 替换./js/为raw URL格式
+          sed -i "s|\\./js/|$BASE_URL/js/|g" "TVBoxOSC/tvbox/api.json"
           
-          # 修复js目录URL格式（从raw URL改为blob URL）
-          sed -i "s|https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/refs/heads/$BRANCH/TVBoxOSC/tvbox/js/|$JS_BLOB_URL|g" "TVBoxOSC/tvbox/api.json"
-          sed -i "s|https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/main/TVBoxOSC/tvbox/js/|$JS_BLOB_URL|g" "TVBoxOSC/tvbox/api.json"
+          # 修复js目录URL格式，确保使用正确的raw URL
+          sed -i "s|https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/main/TVBoxOSC/tvbox/js/|$BASE_URL/js/|g" "TVBoxOSC/tvbox/api.json"
           
           # 替换./py/为完整URL
           sed -i "s|\\./py/|$BASE_URL/py/|g" "TVBoxOSC/tvbox/api.json"
