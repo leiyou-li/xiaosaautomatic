@@ -1,5 +1,5 @@
 {
-    "spider": "./spider.jar",
+    "spider": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/spider.jar",
     "wallpaper": "http://bobohome.ignorelist.com:20247/bing",
     "logo": "http://127.0.0.1:9978/file/TVBox/logo.png",
     "sites": [
@@ -703,7 +703,7 @@
                 "ratio": 1.433
             },
             "ext": {
-                "json": "./json/哔哩视频.json",
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/哔哩视频.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             }
         },
@@ -711,29 +711,29 @@
             "key": "腾讯视频",
             "name": "腾讯｜视频",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/腾讯视频.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/腾讯视频.js"
         },
         {
             "key": "优酷视频",
             "name": "优酷｜视频",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/优酷视频.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/优酷视频.js"
         },
         {
             "key": "芒果视频",
             "name": "芒果｜视频",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/芒果视频.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/芒果视频.js"
         },
         {
             "key": "爱奇艺",
             "name": "爱奇异｜视频",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/爱奇艺.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/爱奇艺.js"
         },
         {
             "key": "三六零",
@@ -750,7 +750,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "./json/xbky.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/xbky.json"
         },
         {
             "key": "玩偶哥哥",
@@ -761,7 +761,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "./json/wogg.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/wogg.json"
         },
         {
             "key": "木偶",
@@ -772,7 +772,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "./json/mogg.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/mogg.json"
         },
         {
             "key": "蜡笔",
@@ -783,7 +783,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "./json/lb.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/lb.json"
         },
         {
             "key": "至臻",
@@ -794,7 +794,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "./json/zz.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/zz.json"
         },
         {
             "key": "多多",
@@ -805,7 +805,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "./json/yyds.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/yyds.json"
         },
         {
             "key": "欧哥",
@@ -816,7 +816,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "./json/og.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/og.json"
         },
         {
             "key": "二小",
@@ -827,7 +827,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "./json/ex.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/ex.json"
         },
         {
             "key": "虎斑",
@@ -838,7 +838,7 @@
             "quickSearch": 1,
             "filterable": 1,
             "changeable": 1,
-            "ext": "./json/hb.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/hb.json"
         },
         {
             "key": "雷鲸",
@@ -853,7 +853,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "./json/lj.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/lj.json"
         },
         {
             "key": "海绵",
@@ -868,7 +868,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "./json/hm.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/hm.json"
         },
         {
             "key": "夸父",
@@ -883,7 +883,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "./json/kf.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/kf.json"
         },
         {
             "key": "趣盘",
@@ -906,8 +906,8 @@
             "key": "双星",
             "name": "双星｜4K",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/双星.js",
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/双星.js",
             "style": {
                 "type": "list"
             }
@@ -916,8 +916,8 @@
             "key": "校长",
             "name": "校长｜4K",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/校长.js",
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/校长.js",
             "style": {
                 "type": "list"
             }
@@ -926,8 +926,8 @@
             "key": "人人电影网",
             "name": "人人｜4K",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/人人电影网.js",
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/人人电影网.js",
             "style": {
                 "type": "list"
             }
@@ -1068,7 +1068,7 @@
             "key": "甜圈短剧",
             "name": "甜圈｜短剧",
             "type": 3,
-            "api": "./py/甜圈短剧.py",
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/py/甜圈短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1078,7 +1078,7 @@
             "key": "锦鲤短剧",
             "name": "锦鲤｜短剧",
             "type": 3,
-            "api": "./py/锦鲤短剧.py",
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/py/锦鲤短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1088,7 +1088,7 @@
             "key": "剧王短剧",
             "name": "剧王｜短剧",
             "type": 3,
-            "api": "./py/剧王短剧.py",
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/py/剧王短剧.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1102,7 +1102,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "./XYQHiker/短剧屋.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XYQHiker/短剧屋.json"
         },
         {
             "key": "天翼影视",
@@ -1124,7 +1124,7 @@
             "key": "猎手影视",
             "name": "猎手｜影视",
             "type": 3,
-            "api": "./py/猎手影视.py",
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/py/猎手影视.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -1220,8 +1220,8 @@
             "key": "采集之王",
             "name": "采集｜合集",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/采集之王.js?type=url&params=../json/采集静态.json$1$1"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/采集之王.js?type=url&params=./home/runner/work/xiaosaautomatic/xiaosaautomatic/json/采集静态.json$1$1"
         },
         {
             "key": "爱看机器人",
@@ -1237,49 +1237,49 @@
             "name": "明星｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "./XBPQ/明星影视.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XBPQ/明星影视.json"
         },
         {
             "key": "麦田影视",
             "name": "麦田｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "./XBPQ/麦田影视.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XBPQ/麦田影视.json"
         },
         {
             "key": "面包影视",
             "name": "面包｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "./XBPQ/面包影视.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XBPQ/面包影视.json"
         },
         {
             "key": "永乐影视",
             "name": "永乐｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "./XBPQ/永乐影视.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XBPQ/永乐影视.json"
         },
         {
             "key": "雪糕影视",
             "name": "雪糕｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "./XBPQ/雪糕影视.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XBPQ/雪糕影视.json"
         },
         {
             "key": "三九影视",
             "name": "三九｜影视",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "./XBPQ/三九影视.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XBPQ/三九影视.json"
         },
         {
             "key": "剧圈圈",
             "name": "剧圈｜影视",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/剧圈圈.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/剧圈圈.js"
         },
         {
             "key": "1905",
@@ -1298,28 +1298,28 @@
             "style": {
                 "type": "list"
             },
-            "ext": "./XBPQ/哆啦新番社.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XBPQ/哆啦新番社.json"
         },
         {
             "key": "56动漫",
             "name": "56｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/56动漫.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/56动漫.js"
         },
         {
             "key": "NT动漫",
             "name": "NT｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/NT动漫.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/NT动漫.js"
         },
         {
             "key": "Anime1",
             "name": "A1｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/Anime1.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/Anime1.js"
         },
         {
             "key": "漫国",
@@ -1521,77 +1521,77 @@
             "name": "樱花｜动漫",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "./XBPQ/樱花动漫.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XBPQ/樱花动漫.json"
         },
         {
             "key": "巴士动漫",
             "name": "巴士｜动漫",
             "type": 3,
             "api": "csp_XYQHiker",
-            "ext": "./XYQHiker/巴士动漫.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XYQHiker/巴士动漫.json"
         },
         {
             "key": "好看动漫",
             "name": "好看｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/好看动漫.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/好看动漫.js"
         },
         {
             "key": "奇米动漫",
             "name": "奇米｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/奇米动漫.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/奇米动漫.js"
         },
         {
             "key": "花子动漫",
             "name": "花子｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/花子动漫.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/花子动漫.js"
         },
         {
             "key": "动画片",
             "name": "动画片｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/动画片大全.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/动画片大全.js"
         },
         {
             "key": "路漫漫",
             "name": "路漫漫｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/路漫漫.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/路漫漫.js"
         },
         {
             "key": "动漫岛",
             "name": "动漫岛｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/动漫岛.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/动漫岛.js"
         },
         {
             "key": "去看吧",
             "name": "去看吧｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/去看吧.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/去看吧.js"
         },
         {
             "key": "爱弹幕",
             "name": "爱弹幕｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/爱弹幕.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/爱弹幕.js"
         },
         {
             "key": "异世界",
             "name": "异世界｜动漫",
             "type": 3,
-            "api": "./js/drpy2.min.js",
-            "ext": "./js/异世界.js"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/drpy2.min.js",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/js/异世界.js"
         },
         {
             "key": "荐片",
@@ -1665,7 +1665,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "./XYQHiker/电影港.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XYQHiker/电影港.json"
         },
         {
             "key": "狐狸君",
@@ -1676,7 +1676,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "./XBPQ/狐狸君.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XBPQ/狐狸君.json"
         },
         {
             "key": "Mp4电影",
@@ -1717,7 +1717,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "./json/quarkShare.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/quarkShare.json"
         },
         {
             "key": "UC",
@@ -1731,7 +1731,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "./json/ucShare.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/ucShare.json"
         },
         {
             "key": "百度云盘",
@@ -1757,7 +1757,7 @@
             "style": {
                 "type": "list"
             },
-            "ext": "./json/alist.json"
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/alist.json"
         },
         {
             "key": "88看球",
@@ -1773,13 +1773,13 @@
             "key": "网络直播",
             "name": "网络｜直播",
             "type": 3,
-            "api": "./py/网络直播.py"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/py/网络直播.py"
         },
         {
             "key": "哔哩直播",
             "name": "哔哩｜直播",
             "type": 3,
-            "api": "./py/哔哩直播.py"
+            "api": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/py/哔哩直播.py"
         },
         {
             "key": "哔哩合集",
@@ -1795,7 +1795,7 @@
                 "ratio": 1.433
             },
             "ext": {
-                "json": "./json/哔哩合集.json",
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/哔哩合集.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             }
         },
@@ -1809,7 +1809,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "./json/哔哩哔哩演唱会.json"
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/哔哩哔哩演唱会.json"
             },
             "style": {
                 "type": "rect",
@@ -1826,7 +1826,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "./json/哔哩哔哩听书.json"
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/哔哩哔哩听书.json"
             },
             "style": {
                 "type": "rect",
@@ -1843,7 +1843,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "./json/哔哩哔哩相声.json"
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/哔哩哔哩相声.json"
             },
             "style": {
                 "type": "rect",
@@ -1860,7 +1860,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "./json/哔哩哔哩小品.json"
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/哔哩哔哩小品.json"
             },
             "style": {
                 "type": "rect",
@@ -1877,7 +1877,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "./json/哔哩哔哩戏曲.json"
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/哔哩哔哩戏曲.json"
             },
             "style": {
                 "type": "rect",
@@ -1893,7 +1893,7 @@
             "quickSearch": 0,
             "filterable": 1,
             "ext": {
-                "json": "./json/少儿教育.json",
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/少儿教育.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             },
             "style": {
@@ -1910,7 +1910,7 @@
             "quickSearch": 0,
             "filterable": 1,
             "ext": {
-                "json": "./json/小学课堂.json",
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/小学课堂.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             },
             "style": {
@@ -1927,7 +1927,7 @@
             "quickSearch": 0,
             "filterable": 1,
             "ext": {
-                "json": "./json/初中课堂.json",
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/初中课堂.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             },
             "style": {
@@ -1944,7 +1944,7 @@
             "quickSearch": 0,
             "filterable": 1,
             "ext": {
-                "json": "./json/高中课堂.json",
+                "json": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/json/高中课堂.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             },
             "style": {
@@ -1971,7 +1971,7 @@
             "name": "养生｜知识",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "./XBPQ/养生堂.json",
+            "ext": "/home/runner/work/xiaosaautomatic/xiaosaautomatic/XBPQ/养生堂.json",
             "style": {
                 "type": "rect",
                 "ratio": 1.597
