@@ -64,8 +64,7 @@ jobs:
           
           echo "仓库URL: $BASE_URL"
           
-          # 替换./spider.jar为完整URL
-          sed -i "s|\\./spider\\.jar|$BASE_URL/spider.jar|g" "TVBoxOSC/tvbox/api.json"
+          # spider.jar保持相对路径不变，只修改其他目录路径
           
           # 替换./json/为完整URL
           sed -i "s|\\./json/|$BASE_URL/json/|g" "TVBoxOSC/tvbox/api.json"
