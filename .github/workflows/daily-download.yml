@@ -36,30 +36,39 @@ jobs:
         fi
         echo "文件下载成功，大小: $(ls -lh 单线路.zip | awk '{print $5}')"
     
-    - name: 清理旧文件
+    - name: 清理旧文件和解压新文件
       run: |
-        echo "清理旧文件..."
+        echo "开始清理旧文件并解压新文件..."
+        
+        # 显示当前目录内容
+        echo "清理前的文件结构:"
+        ls -la
+        
         # 删除之前解压的内容（除了.git目录和当前下载的zip文件）
+        echo "清理旧文件..."
         find . -maxdepth 1 -type d ! -name ".git" ! -name "." -exec rm -rf {} + || true
-        echo "旧文件清理完成"
-    
-    - name: 解压文件
-      run: |
-        echo "开始解压文件..."
-        # 检查文件是否存在
+        find . -maxdepth 1 -type f ! -name "单线路.zip" ! -name ".git*" -delete || true
+        
+        # 显示清理后的内容
+        echo "清理后的文件结构:"
+        ls -la
+        
+        # 检查zip文件是否还存在
         if [ ! -f "单线路.zip" ]; then
-          echo "错误：找不到单线路.zip文件"
+          echo "错误：清理过程中zip文件被删除了"
           exit 1
         fi
+        
+        # 解压文件
+        echo "开始解压文件..."
         unzip -o "单线路.zip" -d .
         echo "解压完成"
         
         # 显示解压后的文件结构
         echo "解压后的文件结构:"
         ls -la
-    
-    - name: 清理压缩文件
-      run: |
+        
+        # 清理zip文件
         rm -f "单线路.zip"
         echo "压缩文件已清理"
     
