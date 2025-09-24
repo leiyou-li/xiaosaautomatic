@@ -72,6 +72,9 @@ jobs:
           # 替换./js/为完整URL
           sed -i "s|\\./js/|$BASE_URL/js/|g" "TVBoxOSC/tvbox/api.json"
           
+          # 修复js目录URL中缺少的refs/heads/路径
+          sed -i "s|https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/main/TVBoxOSC/tvbox/js/|$BASE_URL/js/|g" "TVBoxOSC/tvbox/api.json"
+          
           # 替换./py/为完整URL
           sed -i "s|\\./py/|$BASE_URL/py/|g" "TVBoxOSC/tvbox/api.json"
           
