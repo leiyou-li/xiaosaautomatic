@@ -56,13 +56,34 @@ jobs:
         # 修复api.json中的相对路径
         echo "修复api.json中的相对路径..."
         if [ -f "TVBoxOSC/tvbox/api.json" ]; then
-          # 获取当前工作目录的绝对路径
-          CURRENT_DIR=$(pwd)
-          echo "当前工作目录: $CURRENT_DIR"
+          # 获取仓库信息
+          REPO_OWNER="leiyou-li"
+          REPO_NAME="xiaosaautomatic"
+          BRANCH="main"
+          BASE_URL="https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/$BRANCH/TVBoxOSC/tvbox"
           
-          # 替换相对路径为绝对路径
-          sed -i "s|\\./|$CURRENT_DIR/|g" "TVBoxOSC/tvbox/api.json"
+          echo "仓库URL: $BASE_URL"
+          
+          # 替换./spider.jar为完整URL
+          sed -i "s|\\./spider\\.jar|$BASE_URL/spider.jar|g" "TVBoxOSC/tvbox/api.json"
+          
+          # 替换./json/为完整URL
+          sed -i "s|\\./json/|$BASE_URL/json/|g" "TVBoxOSC/tvbox/api.json"
+          
+          # 替换./js/为完整URL
+          sed -i "s|\\./js/|$BASE_URL/js/|g" "TVBoxOSC/tvbox/api.json"
+          
+          # 替换./py/为完整URL
+          sed -i "s|\\./py/|$BASE_URL/py/|g" "TVBoxOSC/tvbox/api.json"
+          
+          # 替换./XBPQ/为完整URL
+          sed -i "s|\\./XBPQ/|$BASE_URL/XBPQ/|g" "TVBoxOSC/tvbox/api.json"
+          
+          # 替换./XYQHiker/为完整URL
+          sed -i "s|\\./XYQHiker/|$BASE_URL/XYQHiker/|g" "TVBoxOSC/tvbox/api.json"
+          
           echo "api.json路径修复完成"
+          echo "已将相对路径替换为GitHub仓库URL"
         else
           echo "未找到api.json文件，跳过路径修复"
         fi
