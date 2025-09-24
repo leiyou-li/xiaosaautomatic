@@ -711,7 +711,7 @@
             "key": "腾讯视频",
             "name": "腾讯｜视频",
             "type": 3,
-            "api": "https://raw.githubusercontent.com/leiyou-li/xiaosaautomatic/refs/heads/main/TVBoxOSC/tvbox/js/drpy2.min.js",
+            "api": "./js/drpy2.min.js",
             "ext": "https://raw.githubusercontent.com/leiyou-li/xiaosaautomatic/refs/heads/main/TVBoxOSC/tvbox/js/腾讯视频.js"
         },
         {
@@ -2541,4 +2541,5 @@
     "ads": [
         "static-mozai.4gtv.tv"
     ]
+
 }
