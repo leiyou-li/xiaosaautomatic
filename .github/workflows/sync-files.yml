@@ -30,7 +30,7 @@ jobs:
         echo "开始下载文件..."
         
         # 下载文件
-        curl -L -o "data.zip" "https://wget.la/raw.githubusercontent.com/PizazzGY/NewTVBox/main/单线路.zip"
+        curl -L -o "data.zip" "https://raw.githubusercontent.com/PizazzGY/NewTVBox/refs/heads/main/%E5%8D%95%E7%BA%BF%E8%B7%AF.zip"
         
         # 检查下载是否成功
         if [ ! -f "data.zip" ]; then
