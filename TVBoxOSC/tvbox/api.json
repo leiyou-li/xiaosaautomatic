@@ -98,6 +98,18 @@
             }
         },
         {
+            "key": "和友",
+            "name": "和友｜APP",
+            "type": 3,
+            "api": "csp_AppSy",
+            "ext": {
+                "site": "http://qcb.sxtzg.com/api.txt",
+                "siteKey": "rectangleadsadxa",
+                "listKey": "gHSLmx3JQRasgztO",
+                "parsesKey": "gHSLmx3JQRasgztO"
+            }
+        },
+        {
             "key": "金牌",
             "name": "金牌┃APP",
             "type": 3,
@@ -1013,13 +1025,6 @@
                 "type": "list"
             },
             "ext": "https://raw.githubusercontent.com/leiyou-li/xiaosaautomatic/refs/heads/main/TVBoxOSC/tvbox/XBPQ/哆啦新番社.json"
-        },
-        {
-            "key": "56动漫",
-            "name": "56｜动漫",
-            "type": 3,
-            "api": "https://gitee.com/zxmoyun/test/raw/master/mjs/drpy2.min.js",
-            "ext": "https://gitee.com/zxmoyun/test/raw/master/mjs/56动漫.js"
         },
         {
             "key": "Anime1",
