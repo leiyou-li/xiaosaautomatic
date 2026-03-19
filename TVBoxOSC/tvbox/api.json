@@ -109,21 +109,6 @@
             "ext": "http://app.hktvyb.cc"
         },
         {
-            "key": "影匣",
-            "name": "影匣｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": "https://daen-1256234123.cos.ap-shanghai.myqcloud.com/MuQi/mqxhqj.txt",
-                "dataKey": "kj37zs29q22jk96t",
-                "dataIv": "kj37zs29q22jk96t",
-                "init": "initV122",
-                "ua": "okhttp/3.10.0"
-            }
-        },
-        {
             "key": "爱影",
             "name": "爱影｜APP",
             "type": 3,
@@ -149,7 +134,9 @@
             "ext": {
                 "site": "https://daen-1256234123.cos.ap-shanghai.myqcloud.com/MuQi/mqxhqj.txt",
                 "dataKey": "kj37zs29q22jk96t",
-                "dataIv": "kj37zs29q22jk96t"
+                "dataIv": "kj37zs29q22jk96t",
+                "init": "initV122",
+                "ua": "okhttp/3.10.0"
             }
         },
         {
